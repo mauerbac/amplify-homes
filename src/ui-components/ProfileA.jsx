@@ -7,7 +7,7 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Button, Flex, IconGroup, Image, Text } from "@aws-amplify/ui-react";
+import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function ProfileA(props) {
   const { home, overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
@@ -20,6 +20,7 @@ export default function ProfileA(props) {
       width="320px"
       position="relative"
       direction="column"
+      height="428px"
       {...rest}
       {...getOverrideProps(overrides, "Flex")}
     >
@@ -28,9 +29,9 @@ export default function ProfileA(props) {
         borderRadius="160px"
         shrink="0"
         src={home?.image_url}
-        width="160px"
+        width="167px"
         position="relative"
-        height="160px"
+        height="164px"
         {...getOverrideProps(overrides, "Flex.Image[0]")}
       ></Image>
       <Flex
@@ -38,9 +39,10 @@ export default function ProfileA(props) {
         alignItems="center"
         shrink="0"
         gap="8px"
-        width="254px"
+        width="248px"
         position="relative"
         direction="column"
+        height="25px"
         {...getOverrideProps(overrides, "Flex.Flex[0]")}
       >
         <Text
@@ -49,81 +51,47 @@ export default function ProfileA(props) {
           textAlign="center"
           shrink="0"
           display="flex"
+          letterSpacing="0.010000000000000009px"
           justifyContent="flex-start"
           fontFamily="Inter"
-          fontSize="32px"
-          lineHeight="40px"
+          width="143px"
+          fontSize="16px"
+          lineHeight="24px"
           position="relative"
-          fontWeight="700"
+          fontWeight="400"
           direction="column"
+          height="33px"
           children={home?.address}
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[0]")}
         ></Text>
-        <Text
-          padding="0px 0px 0px 0px"
-          color="rgba(48.000000938773155,64.00000378489494,80.00000283122063,1)"
-          textAlign="center"
-          shrink="0"
-          display="flex"
-          letterSpacing="0.010000000000000009px"
-          justifyContent="flex-start"
-          fontFamily="Inter"
-          fontSize="16px"
-          lineHeight="24px"
-          position="relative"
-          fontWeight="400"
-          direction="column"
-          children={home?.price}
-          {...getOverrideProps(overrides, "Flex.Flex[0].Text[1]")}
-        ></Text>
       </Flex>
-      <Flex
+      <Text
         padding="0px 0px 0px 0px"
-        alignItems="flex-start"
+        color="rgba(0,0,0,1)"
+        textAlign="center"
         shrink="0"
-        gap="16px"
-        width="138px"
+        display="flex"
+        justifyContent="flex-start"
+        fontFamily="Inter"
+        width="193px"
+        fontSize="16px"
+        lineHeight="24px"
         position="relative"
-        direction="row"
-        {...getOverrideProps(overrides, "Flex.Flex[1]")}
-      >
-        <IconGroup
-          padding="0px 0px 0px 0px"
-          overflow="hidden"
-          color="rgba(13.000000175088644,26.000000350177288,38.0000015348196,1)"
-          shrink="0"
-          width="24px"
-          fontSize="24px"
-          position="relative"
-          type="group"
-          height="24px"
-          {...getOverrideProps(overrides, "Flex.Flex[1].IconGroup[0]")}
-        ></IconGroup>
-        <Text
-          padding="0px 0px 0px 0px"
-          color="rgba(48.000000938773155,64.00000378489494,80.00000283122063,1)"
-          textAlign="center"
-          shrink="0"
-          display="flex"
-          letterSpacing="0.010000000000000009px"
-          justifyContent="flex-start"
-          fontFamily="Inter"
-          fontSize="16px"
-          lineHeight="24px"
-          position="relative"
-          fontWeight="400"
-          direction="column"
-          children="99 Followers"
-          {...getOverrideProps(overrides, "Flex.Flex[1].Text[0]")}
-        ></Text>
-      </Flex>
+        fontWeight="700"
+        direction="column"
+        height="37px"
+        children={`${"Price: $"}${home?.price}${" /night"}`}
+        {...getOverrideProps(overrides, "Flex.Text[0]")}
+      ></Text>
       <Button
-        alignSelf="stretch"
         size="large"
         shrink="0"
-        variation="primary"
+        src={home?.image_url}
         display="flex"
-        children="View Profile"
+        width="206px"
+        variation="primary"
+        height="41px"
+        children="View on Airbnb"
         {...getOverrideProps(overrides, "Flex.Button[0]")}
       ></Button>
     </Flex>

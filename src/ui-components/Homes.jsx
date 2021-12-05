@@ -26,8 +26,8 @@ export default function Homes(props) {
   return (
     <Collection
       type="list"
-      justifyContent="stretch"
-      direction="column"
+      alignItems="stretch"
+      direction="row"
       items={items || []}
       {...rest}
       {...getOverrideProps(overrides, "Collection")}
