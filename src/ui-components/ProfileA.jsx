@@ -100,7 +100,7 @@ export default function ProfileA(props) {
         fontWeight="700"
         height="36px"
         direction="column"
-        children="Discount - 10% off"
+        children={`${"Discount - "}${home?.discount}${" % off"}`}
         {...getOverrideProps(overrides, "Flex.Badge[0]")}
       ></Badge>
     </Flex>
