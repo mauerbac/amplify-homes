@@ -25,6 +25,7 @@ export { default as MarketingPricing } from "./MarketingPricing";
 export { default as CardC } from "./CardC";
 export { default as CardD } from "./CardD";
 export { default as HeroLayout2 } from "./HeroLayout2";
+export { default as HomeNew } from "./HomeNew";
 export { default as Features2x3 } from "./Features2x3";
 export { default as MarketingFooter } from "./MarketingFooter";
 export { default as HeroLayout4 } from "./HeroLayout4";

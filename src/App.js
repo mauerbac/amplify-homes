@@ -1,11 +1,11 @@
 import './App.css';
-import { Homes, NavBar } from './ui-components'
+import { HomeNew, NavBar } from './ui-components'
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Homes />
+      <HomeNew />
     </div>
   );
 }
