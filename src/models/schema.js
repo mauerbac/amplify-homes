@@ -17,8 +17,8 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "image_url": {
-                    "name": "image_url",
+                "url": {
+                    "name": "url",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
@@ -27,14 +27,14 @@ export const schema = {
                 "price": {
                     "name": "price",
                     "isArray": false,
-                    "type": "Float",
+                    "type": "Int",
                     "isRequired": false,
                     "attributes": []
                 },
                 "discount": {
                     "name": "discount",
                     "isArray": false,
-                    "type": "Float",
+                    "type": "String",
                     "isRequired": false,
                     "attributes": []
                 },
@@ -83,5 +83,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "fb194fc9416c585403f7f54f5de37514"
+    "version": "0aedbbc400ae5e9253f313be9fcc69f4"
 };

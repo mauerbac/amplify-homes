@@ -19,7 +19,7 @@ import {
   Text,
 } from "@aws-amplify/ui-react";
 export default function Ampligram(props) {
-  const { w, overrides: overridesProp, ...rest } = props;
+  const { overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
   return (
     <Flex

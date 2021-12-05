@@ -1,6 +1,6 @@
 {
   "api": {
-    "amplifyhomes": {
+    "home2": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {

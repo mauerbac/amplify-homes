@@ -28,7 +28,7 @@ export default function ProfileA(props) {
         padding="0px 0px 0px 0px"
         borderRadius="160px"
         shrink="0"
-        src={home?.image_url}
+        src={home?.url}
         width="167px"
         position="relative"
         height="164px"
@@ -80,7 +80,7 @@ export default function ProfileA(props) {
         fontWeight="700"
         direction="column"
         height="37px"
-        children={`${"Price: $"}${home?.price}${" /night"}`}
+        children={`${"Price $"}${home?.price}${" /night"}`}
         {...getOverrideProps(overrides, "Flex.Text[0]")}
       ></Text>
       <Badge
@@ -100,7 +100,7 @@ export default function ProfileA(props) {
         fontWeight="700"
         height="36px"
         direction="column"
-        children={`${"Discount - "}${home?.discount}${"% off"}`}
+        children="Discount - 10% off"
         {...getOverrideProps(overrides, "Flex.Badge[0]")}
       ></Badge>
     </Flex>

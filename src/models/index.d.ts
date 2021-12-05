@@ -11,9 +11,9 @@ type HomeMetaData = {
 export declare class Home {
   readonly id: string;
   readonly address?: string;
-  readonly image_url?: string;
+  readonly url?: string;
   readonly price?: number;
-  readonly discount?: number;
+  readonly discount?: string;
   readonly createdAt?: string;
   readonly updatedAt?: string;
   constructor(init: ModelInit<Home, HomeMetaData>);

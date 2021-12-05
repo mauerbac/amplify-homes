@@ -1,5 +1,5 @@
 {
-  "AppSyncApiName": "amplifyhomes",
+  "AppSyncApiName": "home2",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false
 }
