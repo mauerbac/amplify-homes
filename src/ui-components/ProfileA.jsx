@@ -7,7 +7,7 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
+import { Badge, Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function ProfileA(props) {
   const { home, overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
@@ -83,17 +83,26 @@ export default function ProfileA(props) {
         children={`${"Price: $"}${home?.price}${" /night"}`}
         {...getOverrideProps(overrides, "Flex.Text[0]")}
       ></Text>
-      <Button
-        size="large"
+      <Badge
+        backgroundColor="rgba(214.00000244379044,245.00000059604645,219.0000021457672,1)"
+        color="rgba(54.00000058114529,94.0000019967556,61.00000016391277,1)"
         shrink="0"
-        src={home?.image_url}
+        textAlign="left"
         display="flex"
-        width="206px"
-        variation="primary"
-        height="41px"
-        children="View on Airbnb"
-        {...getOverrideProps(overrides, "Flex.Button[0]")}
-      ></Button>
+        letterSpacing="0.49px"
+        justifyContent="flex-start"
+        variation="success"
+        fontFamily="Inter"
+        size="default"
+        width="246px"
+        fontSize="16px"
+        lineHeight="20px"
+        fontWeight="700"
+        height="36px"
+        direction="column"
+        children={`${"Discount - "}${home?.discount}${"% off"}`}
+        {...getOverrideProps(overrides, "Flex.Badge[0]")}
+      ></Badge>
     </Flex>
   );
 }
